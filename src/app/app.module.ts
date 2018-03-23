@@ -1,20 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgxPaginationModule } from 'ngx-pagination';
-import { FormsModule } from '@angular/forms';
-
+/* component */
 import { AppComponent } from './app.component';
-import { ProductFilter } from '../app/pipe/productFilter';
+import { WelcomeComponent } from './component/welcome.component';
+/* routing */
+import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductFilter
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
-    NgxPaginationModule,
-    FormsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
